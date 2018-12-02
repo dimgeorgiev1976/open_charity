@@ -1,0 +1,73 @@
+
+ /* Owl Carousel v2.3.4
+ * Copyright 2013-2018 David Deutsch
+ * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ */
+/*
+ *  Default theme - Owl Carousel CSS File
+ */
+
+
+ .owl-carousel .owl-item img { display:block;
+   width: auto;
+   max-width: none; }
+   
+ .margin-item { margin-left: 0px;
+      &:last-child{ margin-right: 0;} }
+.owl-carousel .owl-nav {
+  margin-top: 10px;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent; }
+  .owl-carousel .owl-nav [class*='owl-'] {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    overflow: hidden;
+    outline:none;
+    color: @card-btn;
+    font-size: 63px;
+    margin: 0px;
+    padding: 10px 14px;
+    display: inline-block;}
+    .owl-carousel .owl-nav [class*='owl-']:hover {
+      color: @card-btn;
+      text-decoration: none; }
+  .owl-carousel .owl-nav .disabled {
+    opacity: 1;
+    cursor: default; }
+.owl-carousel .owl-nav.disabled + .owl-dots {
+  margin-top: 1px;
+  margin-bottom: -10px;
+  margin-right: 28px; 
+  outline-style: none;}
+.owl-carousel .owl-dots {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent; }
+  .owl-carousel .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    outline: none; }
+    .owl-carousel .owl-dots .owl-dot span {
+      background: @grey-dots;
+      width: 10px;
+      height: 10px;
+      margin: 0px 5px;
+      display: block;
+      -webkit-backface-visibility: visible;
+      transition: opacity 200ms ease;
+      border-radius: 30px; 
+    &:last-child{ font-size: 0;} }
+.owl-carousel .owl-dots .owl-dot.active span, .owl-carousel .owl-dots .owl-dot:hover span {
+      background: #5fc0c3;}
+.item { background-color: #4DC7A0;
+  color: white;
+  font-size: 30px;
+  height: 150px;
+  padding: 10px;}
+
+.owl-carousel .owl-nav button,
+.owl-carousel .owl-nav button, {position: absolute;
+  background-position: left top; }
+.owl-prev { left: -11px; top: 26%; }
+.owl-next { right: -6px; top: 26%; }

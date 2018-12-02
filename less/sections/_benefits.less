@@ -1,0 +1,66 @@
+
+.benefit-block {
+	display: flex;
+	flex-direction: column;
+				@media (min-width: 768px) { 
+				display: flex;
+				flex-direction: row;} }
+.card__benefit {
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+	    &:last-child{ margin-bottom: 0;}
+	@media (min-width: 768px) { width: 33.3333333333%; margin-bottom: 0;} }
+
+.benefit-block__img {
+	height: 130px;
+	margin-bottom: 17px;
+	display: table;
+	width: 100%;
+		@media (min-width: 768px) {
+		margin-bottom: 18px;}
+	div {display: table-cell;
+		vertical-align: middle;
+		text-align: center;}
+	img {display: inline-block;}
+	&--meetup {img {width: 128.5px; height: 94.5px;}}
+	&--slack {img {width: 109px; height: 108px;}}
+	&--wiki {img {width: 106px; height: 106px; margin-top: 9px;
+		margin-left: -5px;} } }
+		
+.benefit-block__header {
+	font-family: 'Museo Sans 500';
+	font-size: 17px;
+	font-weight: normal;
+	color: @grey-nav;
+	line-height: 1.9411;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	margin-bottom: 8px;
+	@media (min-width: 768px) {  } }
+	
+.benefit-block__text {
+	display: none;
+	@media (min-width: 768px) { display: block;
+				font-weight: normal;
+				font-size: 14px;
+				line-height: 1.681;
+				color: @grey-news;
+				margin-bottom: 23px; } 
+	&--meetup { @media (min-width: 1170px) { 
+	padding-left: 40px;
+	padding-right: 40px;} }
+ 			
+	&--slack { @media (min-width: 1170px) {
+	padding-left: 60px;
+	padding-right: 60px;} }
+
+	&--wiki { @media (min-width: 768px) {
+	padding-left: 40px;
+	padding-right: 40px} } }
+		
+
+		
+
